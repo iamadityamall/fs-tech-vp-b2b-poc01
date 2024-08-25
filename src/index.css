@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.marquee-row {
+  animation: marquee 40s linear infinite;
+  animation-play-state: running;
+}
+
+.marquee-row:hover {
+  animation-play-state: paused;
+}
+
+.marquee-row-reverse {
+  animation: marquee-reverse 40s linear infinite;
+  animation-play-state: running;
+}
+
+.marquee-row-reverse:hover {
+  animation-play-state: paused;
+}
