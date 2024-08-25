@@ -26,7 +26,7 @@ const HeroSection = () => {
         // Parallax effect for smooth background scrolling
       }}
     >
-      {/* Dark Overlay */}
+      {/* Dark Overlays */}
       <div className="absolute inset-0 bg-black opacity-65"></div>
 
       {/* Container aligned with the navbar */}
